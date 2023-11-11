@@ -1,0 +1,6 @@
+1.菜的浏览次数及下单
+  将这个数据存到 Redis =》 spring data redis
+              resfood_菜编号_detail    10
+              resfood_菜编号_order     20
+  显示前台：bootstrap -》badges组件
+2. 实时监控 webSocket
