@@ -87,7 +87,10 @@ spring:
 问题：将数据库连接池化，以提高数据库访问性能，并可监控数据库操作日志：druid 简化dao层开发：mybatisPlus
 
 ========测试技术=========================================
-
+1.springboot测试
+2.测试用例 testcase=>测试套件 testsuit
+3.断言机制
+4.mock测试：测试web层   模拟web容器环境（tomcat环境  -》HttpServletRequest,HttpServletResponse,HttpSession,Cookie）
 ========前端技术=========================================
 一，es6中的Promise对象及then(),catch(),race()的原理及使用场景：
  1.使用场景：回调函数,定时器，事件绑定，ajax

@@ -70,12 +70,11 @@ public class ResfoodBizImpl implements ResfoodBiz {
             List<Integer> allFoodDetailCountValues = redisTemplate.opsForValue().multiGet(keys);
             for (int i = 0; i < list.size(); i++) {
                 if (allFoodDetailCountValues.get(i) == null) {
-                    continue;
+                    list.get(i).setDetail_count(0L);
                 } else {
                     list.get(i).setDetail_count(Long.valueOf(allFoodDetailCountValues.get(i).toString()));
-                    //再修改图片的地址
-                    list.get(i).setFphoto(nginxAddress+list.get(i).getFphoto());
-                }
+                }//再修改图片的地址
+                list.get(i).setFphoto(nginxAddress+list.get(i).getFphoto());
             }
             //还要查询下订数
 
